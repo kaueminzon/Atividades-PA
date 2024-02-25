@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+
+</head>
+
+<body>
+    <div class="containerForm">
+        <div class="tittle">Calculator</div>
+        <form action="get" name="calculator">
+            <div class="colorTextInput">
+                <input id="num1" type="text" placeholder="Numero 1:">
+            </div>
+            <br>
+            <div class="colorTextInput">
+                <input id="num2" type="text" placeholder="Numero 2:">
+            </div>
+            <br>
+            <div class="colorTextInput">
+                <!-- <label class="labelText">Resultado:</label> -->
+                <input type="text" name="total" disabled placeholder="Resultado">
+            </div>
+            </form>
+            <br>
+        <div class="button">
+            <button class="button-3d" id="multiply" type="button" value="multiiplcar" onclick="javascript:multiply()">
+                *
+            </button>
+            <button class="button-3d" id="add" type="button" value="adição" onclick="javascript:add()">
+                +
+            </button>
+            <button class="button-3d" id="subtract" type="button" value="subtração" onclick="javascript:subtract()">
+                -
+            </button>
+            <button class="button-3d" id="division" type="button" value="divisão" onclick="javascript:divide()">
+                /
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function multiply() {
+            a = Number(document.calculator.num1.value.replace(",", "."))
+            b = Number(document.calculator.num2.value.replace(",", "."))
+            c = a * b
+            document.calculator.total.value = c;
+        }
+
+        function add() {
+            a = Number(document.calculator.num1.value.replace(",", "."))
+            b = Number(document.calculator.num2.value.replace(",", "."))
+            c = a + b
+            document.calculator.total.value = c;
+        }
+
+        function subtract() {
+            a = Number(document.calculator.num1.value.replace(",", "."))
+            b = Number(document.calculator.num2.value.replace(",", "."))
+            c = a - b
+            document.calculator.total.value = c;
+        }
+
+        function divide() {
+            a = Number(document.calculator.num1.value.replace(",", "."))
+            b = Number(document.calculator.num2.value.replace(",", "."))
+            c = a / b
+            document.calculator.total.value = c;
+        }
+
+    </script>
+</body>
+
+</html>

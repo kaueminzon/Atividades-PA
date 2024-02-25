@@ -1,0 +1,81 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Quicksand , sans-serif
+}
+
+.tittle{
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+.containerForm {
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.button-3d {
+    padding: 10px 15px;
+    font-size: 25px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 9px #007bff;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
+    width: 60px;
+    
+}
+
+.button-3d:hover {
+    background-color: #0056b3;
+    box-shadow: 0 6px #0056b3;
+    transform: translateY(3px);
+}
+
+.button-3d:active {
+    background-color: #004085;
+    box-shadow: 0 3px #004085;
+    transform: translateY(6px);
+}
+
+.button-3d {
+    outline: none;
+    border: 4px solid #007bff;
+    box-shadow: 0 6px #0056b3;
+    margin: 5px;
+}
+
+
+input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    font-size: 12pt;
+    border-radius: 10px;
+    font-family: Quicksand, sans-serif
+}
+
+input:focus{
+    outline: none;
+}
+
+.colorTextInput {
+    background-color: white;
+    border-radius: 10px;
+    width: 90%;
+    padding: 15px;
+}
+
+.button {
+    margin: 10px;
+}
